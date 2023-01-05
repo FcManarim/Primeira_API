@@ -1,7 +1,11 @@
-npm init
+
+***comandos terminal vscode
+npm init (Iniciar o projeto para criar o package.json)
 npm install express ( criar o web service).
 npm install mogoose (Dependecias do banco de dados que será usado na API)
 npm install --save-dev @babel/core @babel/cli @babel/node @babel/preset-env   (Compilador do Javascript para API)
 npm install nodemon body-parser
 
 **Ferramentas para utilizar os methodos Postman
+
+**Banco de dados MongoDB e ferramenta para manipular banco Studio 3T
