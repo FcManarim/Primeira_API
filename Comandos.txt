@@ -12,3 +12,49 @@ npm install nodemon body-parser
 
 Após finalizado as rotas para GET, PUT, DELETE and POST importar a biblioteca mongoose and body parser
  para poder criar o schema no index
+
+primeiro POST
+{
+    "name": "A Paciente Silenciosa",
+    "author": "Alex Michaelides",
+    "sinopse": "Após cometer o assassinado de seu marido, uma mulher se recusa a falar qualquer coisa, deixando suspeitas e mistérios não resolvidos sobre o caso. E o terapeuta Theo Faber está obcecado em descobrir o motivo da violencia e do silencio. Só ela sabe o que aconteceu. Só ele pode fazê-la falar. A paciente silenciosa é um daqueles livros que não saem da cabeça do leitor, quer ele queira, quer não.",
+    "idiom": "Portugues",
+    "isbn": 8501116432,
+    "image": "PacienteMisteriosa.png"
+}
+
+{
+    "name": "Verity",
+    "author": "Colleen Hoover",
+    "sinopse": "Um casal apaixonado. Uma intrusa. Três mentes doentias. Finalista do prêmio Goodreads como melhor romance de 2019, Verity é o primeiro thriller de Colleen Hoover e deixa os leitores envolvidos do começo ao fim.",
+    "idiom": "Portugues",
+    "isbn": 8501117846,
+    "image": "Verity.png",
+    "date": "2023-01-07T10:32:12.271Z",
+    "_id": "63b94a49b51fad32b24339f3",
+    "__v": 0
+}
+
+Erro ao adicionar uma string em um campo Number
+{
+    "errors": {
+        "isbn": {
+            "stringValue": "\"854310999X\"",
+            "valueType": "string",
+            "kind": "Number",
+            "value": "854310999X",
+            "path": "isbn",
+            "reason": {
+                "generatedMessage": true,
+                "code": "ERR_ASSERTION",
+                "actual": false,
+                "expected": true,
+                "operator": "=="
+            },
+            "name": "CastError",
+            "message": "Cast to Number failed for value \"854310999X\" (type string) at path \"isbn\""
+        }
+    },
+    "_message": "Book validation failed",
+    "name": "ValidationError",
+    "message": "Book validation failed: isbn: Cast to Number failed for value \"854310999X\" (type string) at path \"isbn\""

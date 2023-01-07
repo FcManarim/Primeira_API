@@ -1,27 +1,27 @@
+import { addNewBook, getBooks } from "../controllers/bookController";
+
 const routes = (app) => {
   app
     .route("/book")
 
     .get((req, res, next) => {
       //exemplo de interação com midleware retirado do código original(visivel no terminal)
-      console.log(`URL from: ${req.originalUrl}`)
-      console.log(`Type: ${req.method}`)
+      console.log(`URL from: ${req.originalUrl}`);
+      console.log(`Type: ${req.method}`);
       next();
-    },
-    (req, res, next) =>
-      res.send("GET request successful!"))
+    }, getBooks)
 
-    .post((req, res) => {
-      res.send("POST request successful!");
-    });
+    .post(addNewBook);
 
-    app.route("/book:idBook")
+
+  app
+    .route("/book:idBook")
     .delete((req, res) => {
       res.send("DELETE request successful!");
     })
     .put((req, res) => {
       res.send("PUT request successful!");
-    })
+    });
 };
 
 export default routes;

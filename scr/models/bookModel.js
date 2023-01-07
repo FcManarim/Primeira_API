@@ -2,29 +2,36 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-export BookSchema = new Schema({
+export const BookSchema = new Schema({
     name: {
         type: String,
         required: 'Enter the book name:'
     },
     author: {
         type: String,
-        required: 'Enter the author name:'
+        // required: 'Enter the author name:'
     },
     sinopse: {
         type: String,
-        required: 'Enter the sinopse of the book:'
+        // required: 'Enter the sinopse of the book:'
     },
     idiom: {
         type: String,
-        required: 'Enter the idiom:'
+        // required: 'Enter the idiom:'
     },
     isbn: {
-        type: Number,
-        required: 'Enter ISBN:'
+        type: String,
+        // required: 'Enter ISBN:'
+    },
+    image: {
+        type: String
+    },
+    nova_coluna: {
+        type: String
     },
     date: {
-        type: Number,
+        type: Date,
         default : Date.now()
     }
+  
 });
