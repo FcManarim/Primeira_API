@@ -15,11 +15,20 @@ export const addNewBook = (req, res) => {
 };
 
 export const getBooks = (req, res) => {
-    // {} vai buscar tudo que tem no banco, não especificou um ID
-    Book.find({}, (err, book) => {
-        if (err) {
-            res.send(err)
-        }
-        res.json(book)
-    });
+  // {} vai buscar tudo que tem no banco, não especificou um ID
+  Book.find({}, (err, book) => {
+    if (err) {
+      res.send(err);
+    }
+    res.json(book);
+  });
+};
+
+export const getBookId = (req, res) => {
+  Book.findById(req.params.bookId, (err, book) => {
+    if (err) {
+      res.send(err);
+    }
+    res.json(book);
+  });
 };
