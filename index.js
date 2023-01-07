@@ -1,10 +1,12 @@
 import express from "express";
-import routes from "./scr/routes/clientRoute";
+import routes from "./scr/routes/bookRoute";
 
 
 const app = express();
 const PORT = 3000;
 
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json()); 
 routes(app)
 
 //exibir na console do server
