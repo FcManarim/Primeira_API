@@ -32,3 +32,26 @@ export const getBookId = (req, res) => {
     res.json(book);
   });
 };
+
+export const updateBook = (req, res) => {
+  Book.findOneAndUpdate(
+    { _id: req.params.bookId },
+    req.body,
+    { new: true },
+    (err, book) => {
+      if (err) {
+        res.send(err);
+      }
+      res.json(book);
+    }
+  );
+};
+
+export const removeBook = (req, res) => {
+  Book.remove({ _id: req.params.bookId }, (err, book) => {
+    if (err) {
+      res.send(err);
+    }
+    res.json({ message: 'Data deleted successfully!'});
+  });
+};

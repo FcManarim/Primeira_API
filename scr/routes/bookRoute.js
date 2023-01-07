@@ -1,4 +1,10 @@
-import { addNewBook, getBooks, getBookId } from "../controllers/bookController";
+import {
+  addNewBook,
+  getBooks,
+  getBookId,
+  updateBook,
+  removeBook,
+} from "../controllers/bookController";
 
 const routes = (app) => {
   app
@@ -13,17 +19,10 @@ const routes = (app) => {
 
     .post(addNewBook);
 
-  app
-    .route("/book/:bookId")
-    .get(getBookId)
-
-    .delete((req, res) => {
-      res.send("DELETE request successful!");
-    })
-    .put((req, res) => {
-      res.send("PUT request successful!");
-    });
+  app.route("/book/:bookId")
+  .get(getBookId)
+  .put(updateBook)
+  .delete(removeBook);
 };
-
 
 export default routes;
