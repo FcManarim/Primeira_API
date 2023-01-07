@@ -9,3 +9,6 @@ npm install nodemon body-parser
 **Ferramentas para utilizar os methodos Postman
 
 **Banco de dados MongoDB e ferramenta para manipular banco Studio 3T
+
+Após finalizado as rotas para GET, PUT, DELETE and POST importar a biblioteca mongoose and body parser
+ para poder criar o schema no index

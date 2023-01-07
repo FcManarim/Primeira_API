@@ -4,23 +4,23 @@ const routes = (app) => {
 
     .get((req, res, next) => {
       //exemplo de interação com midleware retirado do código original(visivel no terminal)
-      console.log(`Chamada de: ${req.originalUrl}`)
-      console.log(`Chamada do tipo: ${req.method}`)
+      console.log(`URL from: ${req.originalUrl}`)
+      console.log(`Type: ${req.method}`)
       next();
     },
     (req, res, next) =>
-      res.send("Get realizado com sucesso!"))
+      res.send("GET request successful!"))
 
     .post((req, res) => {
-      res.send("Post realizado com sucesso!");
+      res.send("POST request successful!");
     });
 
     app.route("/book:idBook")
     .delete((req, res) => {
-      res.send("Delete realizado com sucesso!");
+      res.send("DELETE request successful!");
     })
     .put((req, res) => {
-      res.send("Atualização realizada com sucesso!");
+      res.send("PUT request successful!");
     })
 };
 
