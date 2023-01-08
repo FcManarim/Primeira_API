@@ -9,20 +9,17 @@ import {
 const routes = (app) => {
   app
     .route("/book")
-
     .get((req, res, next) => {
-      //exemplo de interação com midleware retirado do código original(visivel no terminal)
-      console.log(`URL from: ${req.originalUrl}`);
-      console.log(`Type: ${req.method}`);
+      console.log(`URL from: ${req.originalUrl}`); //exemplo de interação com midleware
+      console.log(`Type: ${req.method}`);         // retirado do código original(visivel no terminal)
       next();
     }, getBooks)
-
     .post(addNewBook);
 
-  app.route("/book/:bookId")
+  app
+  .route("/book/:bookId")
   .get(getBookId)
   .put(updateBook)
   .delete(removeBook);
 };
-
 export default routes;
