@@ -52,6 +52,6 @@ export const removeBook = (req, res) => {
     if (err) {
       res.send(err);
     }
-    res.json({ message: 'Data deleted successfully!'});
+    res.json({ message: "Data deleted successfully!" });
   });
 };

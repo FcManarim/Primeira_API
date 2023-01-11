@@ -1,0 +1,7 @@
+GET http://localhost:3000/book/63b9770f322d32bb0ba0b56b
+
+//utilizado REST CLIENT do VSCODE para testar os métodos
+
+https://reqres.in/api/unknown/2
+
+# ctrl+alt+r para executar
