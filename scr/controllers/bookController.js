@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import { BookSchema } from "../models/bookModel";
 
+
 const Book = mongoose.model("Book", BookSchema);
 
 export const addNewBook = (req, res) => {
