@@ -9,19 +9,15 @@ export const BookSchema = new Schema({
   },
   author: {
     type: String,
-    // required: 'Enter the author name:'
   },
   sinopse: {
     type: String,
-    // required: 'Enter the sinopse of the book:'
   },
   idiom: {
     type: String,
-    // required: 'Enter the idiom:'
   },
   isbn: {
     type: String,
-    // required: 'Enter ISBN:'
   },
   image: {
     type: String,
@@ -34,3 +30,16 @@ export const BookSchema = new Schema({
     default: Date.now(),
   }
 });
+
+export const UsuarioSchema = new Schema ({
+  name: {
+    type: String,
+    required: "Enter the book name:",
+  },
+  email: {
+    type: String,
+  },
+  password: {
+    type: String,
+  } 
+})
