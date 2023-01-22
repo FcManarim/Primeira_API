@@ -1,6 +1,6 @@
 🚀✨ Proposta do projeto.
 
-Criação de uma API para gravar/disponibilizar os dados dos livros que li no ano de 2022 e que mais gostei. A proposta inicial foi me auto-desafiar nos conceitos da construção de API, modelagem dos dados no banco.
+Criação de uma API para gravar/disponibilizar os dados dos livros que li no ano de 2022 e que mais gostei. A proposta inicial foi me auto-desafiar nos conceitos da construção de uma API e a modelagem dos dados no banco.
 
 
 🧠✨ O que aprendi.
@@ -24,7 +24,7 @@ Para rodar o repositório é necessário clonar o mesmo, instalar o banco de dad
  POST   localhost:3000/book  "utilizar a estrutura de dados contida no Models".
 
  PUT   localhost:3000/book/idDoBook Identificar o campo que deseja alterar.
- 
+
  DELETE  localhost:3000/book/idDoBook o livro será excluído do banco de dados.
 
 Segue algumas imagens para elucidar o funcionamento.
