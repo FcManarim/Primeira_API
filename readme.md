@@ -9,10 +9,17 @@ JavaScript e NodeJs
 
 
 💻✨ Rodando o projeto
-Para rodar o repositório é necessário clonar o mesmo. Caso utilize o VS Code, executar o comando: npm start para que web service seja iniciado. Após realizado esta etapa já possível interagir com a API pelas seguintes rotas:
-O banco de dados MongoDb também é necessário ser instalado. 
+Para rodar o repositório é necessário clonar o mesmo. O banco de dados MongoDb também é necessário ser instalado. Caso utilize o VS Code, executar o comando: npm start para que web server seja iniciado. Após realizado esta etapa já é possível interagir com a API pelas seguintes rotas:
+ 
+ GET localhost:3000/book
+ GETById localhost:3000/book/idDoBook
+ POST   localhost:3000/book  "utilizar a estrutura de dados contida no Models"
+ PUT   localhost:3000/book/idDoBook Identificar o campo que deseja alterar
+ DELETE  localhost:3000/book/idDoBook o livro será excluído do banco de dados.
 
+Segue algumas imagens para elucidar o funcionamento.
 
 ![alt text](assets/images/Readme/POST.png)
 ![alt text](assets/images/Readme/GET.png)
+![alt text](assets/images/Readme/DELETE.png)
 
