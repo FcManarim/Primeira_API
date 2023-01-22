@@ -13,6 +13,6 @@ Para rodar o repositório é necessário clonar o mesmo. Caso utilize o VS Code,
 O banco de dados MongoDb também é necessário ser instalado. 
 
 
-![alt text](assets/images/Readme/)
+![alt text](assets/images/Readme/POST.png)
 ![alt text](assets/images/Readme/GET.png)
 
